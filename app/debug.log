@@ -1,0 +1,874 @@
+2024-05-30 22:44:17,430 INFO Watching for file changes with StatReloader
+2024-05-30 22:46:46,132 INFO D:\testDjango\app\app\urls.py changed, reloading.
+2024-05-30 22:46:46,556 INFO Watching for file changes with StatReloader
+2024-05-30 22:55:05,548 INFO Watching for file changes with StatReloader
+2024-05-30 22:55:08,556 WARNING Method Not Allowed: /sumList/
+2024-05-30 22:56:03,358 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 22:56:03,738 INFO Watching for file changes with StatReloader
+2024-05-30 22:56:13,268 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 22:56:13,743 INFO Watching for file changes with StatReloader
+2024-05-30 22:57:40,847 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 22:57:41,223 INFO Watching for file changes with StatReloader
+2024-05-30 22:57:44,208 ERROR Internal Server Error: /sumList/
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 48, in mapstar
+    return list(map(*args))
+           ^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'list'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\app\innerApp\views.py", line 16, in list
+    int_list = multiprocessing.Pool().map(int, inputList)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 774, in get
+    raise self._value
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'list'
+2024-05-30 23:01:41,819 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:01:42,308 INFO Watching for file changes with StatReloader
+2024-05-30 23:01:44,114 ERROR Internal Server Error: /sumList/
+Traceback (most recent call last):
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\app\innerApp\views.py", line 19, in list
+    results = pool.map(self.sum_inner, inputList)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 774, in get
+    raise self._value
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 540, in _handle_tasks
+    put(task)
+  File "C:\Program Files\Python312\Lib\multiprocessing\connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\reduction.py", line 51, in dumps
+    cls(buf, protocol).dump(obj)
+TypeError: cannot pickle 'BufferedReader' instances
+2024-05-30 23:03:16,442 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:03:16,896 INFO Watching for file changes with StatReloader
+2024-05-30 23:03:18,048 ERROR Internal Server Error: /sumList/
+Traceback (most recent call last):
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\app\innerApp\views.py", line 19, in list
+    results = pool.map(self.sum_inner, inputList)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 774, in get
+    raise self._value
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 540, in _handle_tasks
+    put(task)
+  File "C:\Program Files\Python312\Lib\multiprocessing\connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\reduction.py", line 51, in dumps
+    cls(buf, protocol).dump(obj)
+TypeError: cannot pickle 'BufferedReader' instances
+2024-05-30 23:04:03,198 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:04:03,630 INFO Watching for file changes with StatReloader
+2024-05-30 23:04:10,089 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:04:10,459 INFO Watching for file changes with StatReloader
+2024-05-30 23:04:11,978 ERROR Internal Server Error: /sumList/
+Traceback (most recent call last):
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\app\innerApp\views.py", line 18, in list
+    int_list = multiprocessing.Pool().map(self.sum_inner, inputList)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 774, in get
+    raise self._value
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 540, in _handle_tasks
+    put(task)
+  File "C:\Program Files\Python312\Lib\multiprocessing\connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\reduction.py", line 51, in dumps
+    cls(buf, protocol).dump(obj)
+TypeError: cannot pickle 'BufferedReader' instances
+2024-05-30 23:04:35,772 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:04:36,196 INFO Watching for file changes with StatReloader
+2024-05-30 23:04:39,546 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:04:39,947 INFO Watching for file changes with StatReloader
+2024-05-30 23:05:35,352 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:05:35,770 INFO Watching for file changes with StatReloader
+2024-05-30 23:06:09,421 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:06:09,820 INFO Watching for file changes with StatReloader
+2024-05-30 23:06:11,587 ERROR Internal Server Error: /sumList/
+Traceback (most recent call last):
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\app\innerApp\views.py", line 20, in list
+    results = pool.map(self.sum_inner, inputList)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 774, in get
+    raise self._value
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 540, in _handle_tasks
+    put(task)
+  File "C:\Program Files\Python312\Lib\multiprocessing\connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\reduction.py", line 51, in dumps
+    cls(buf, protocol).dump(obj)
+TypeError: cannot pickle 'BufferedReader' instances
+2024-05-30 23:06:29,938 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:06:30,353 INFO Watching for file changes with StatReloader
+2024-05-30 23:06:31,910 ERROR Internal Server Error: /sumList/
+Traceback (most recent call last):
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\app\innerApp\views.py", line 20, in list
+    results = pool.map(self.sum_inner, inputList)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 774, in get
+    raise self._value
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 540, in _handle_tasks
+    put(task)
+  File "C:\Program Files\Python312\Lib\multiprocessing\connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\reduction.py", line 51, in dumps
+    cls(buf, protocol).dump(obj)
+TypeError: cannot pickle 'BufferedReader' instances
+2024-05-30 23:07:56,578 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:07:57,000 INFO Watching for file changes with StatReloader
+2024-05-30 23:08:11,694 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:08:12,064 INFO Watching for file changes with StatReloader
+2024-05-30 23:08:14,996 ERROR Internal Server Error: /sumList/
+Traceback (most recent call last):
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\app\innerApp\views.py", line 21, in list
+    results = pool.map(sum(inputList), inputList)
+                       ^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'list'
+2024-05-30 23:08:32,101 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:08:32,551 INFO Watching for file changes with StatReloader
+2024-05-30 23:10:46,879 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:10:47,347 INFO Watching for file changes with StatReloader
+2024-05-30 23:10:58,966 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:10:59,352 INFO Watching for file changes with StatReloader
+2024-05-30 23:11:01,084 ERROR Internal Server Error: /sumList/
+Traceback (most recent call last):
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\app\innerApp\views.py", line 21, in list
+    results = pool.map(self.sum_inner, inputList)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 774, in get
+    raise self._value
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 540, in _handle_tasks
+    put(task)
+  File "C:\Program Files\Python312\Lib\multiprocessing\connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\reduction.py", line 51, in dumps
+    cls(buf, protocol).dump(obj)
+TypeError: cannot pickle 'BufferedReader' instances
+2024-05-30 23:12:56,879 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:12:57,321 INFO Watching for file changes with StatReloader
+2024-05-30 23:13:00,657 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:13:01,016 INFO Watching for file changes with StatReloader
+2024-05-30 23:13:08,474 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:13:08,857 INFO Watching for file changes with StatReloader
+2024-05-30 23:13:22,478 ERROR Internal Server Error: /sumList/
+Traceback (most recent call last):
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\app\innerApp\views.py", line 22, in list
+    results = pool.map(self.sum_inner, inputList)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 774, in get
+    raise self._value
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 540, in _handle_tasks
+    put(task)
+  File "C:\Program Files\Python312\Lib\multiprocessing\connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\reduction.py", line 51, in dumps
+    cls(buf, protocol).dump(obj)
+TypeError: cannot pickle 'BufferedReader' instances
+2024-05-30 23:15:11,285 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:15:11,715 INFO Watching for file changes with StatReloader
+2024-05-30 23:15:14,074 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:15:14,461 INFO Watching for file changes with StatReloader
+2024-05-30 23:15:25,050 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:15:25,504 INFO Watching for file changes with StatReloader
+2024-05-30 23:15:26,921 ERROR Internal Server Error: /sumList/
+Traceback (most recent call last):
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\app\innerApp\views.py", line 24, in list
+    results = self.process_list(inputList)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\app\innerApp\views.py", line 19, in process_list
+    results = pool.map(self.sum_inner, nested_list)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 774, in get
+    raise self._value
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 540, in _handle_tasks
+    put(task)
+  File "C:\Program Files\Python312\Lib\multiprocessing\connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\reduction.py", line 51, in dumps
+    cls(buf, protocol).dump(obj)
+TypeError: cannot pickle 'BufferedReader' instances
+2024-05-30 23:18:17,295 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:18:17,700 INFO Watching for file changes with StatReloader
+2024-05-30 23:18:59,484 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:18:59,913 INFO Watching for file changes with StatReloader
+2024-05-30 23:19:18,735 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:19:19,169 INFO Watching for file changes with StatReloader
+2024-05-30 23:19:21,700 ERROR Internal Server Error: /sumList/
+Traceback (most recent call last):
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\viewsets.py", line 116, in view
+    handler = getattr(self, action)
+              ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ListManipulationViewSet' object has no attribute 'list'
+2024-05-30 23:19:27,739 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:19:28,152 INFO Watching for file changes with StatReloader
+2024-05-30 23:19:32,870 ERROR Internal Server Error: /sumList/
+Traceback (most recent call last):
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\app\innerApp\views.py", line 31, in list
+    total_sum_arr = self.process_list(nested_list)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\app\innerApp\views.py", line 19, in process_list
+    results = pool.map(self.sum_inner, nested_list)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 774, in get
+    raise self._value
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 540, in _handle_tasks
+    put(task)
+  File "C:\Program Files\Python312\Lib\multiprocessing\connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\reduction.py", line 51, in dumps
+    cls(buf, protocol).dump(obj)
+TypeError: cannot pickle 'BufferedReader' instances
+2024-05-30 23:19:59,772 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:20:00,212 INFO Watching for file changes with StatReloader
+2024-05-30 23:20:55,853 INFO Watching for file changes with StatReloader
+2024-05-30 23:21:00,397 ERROR Internal Server Error: /sumList/
+Traceback (most recent call last):
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\app\innerApp\views.py", line 24, in list
+    results = self.process_list(inputList)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\app\innerApp\views.py", line 19, in process_list
+    results = pool.map(self.sum_inner, nested_list)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 774, in get
+    raise self._value
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 540, in _handle_tasks
+    put(task)
+  File "C:\Program Files\Python312\Lib\multiprocessing\connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\reduction.py", line 51, in dumps
+    cls(buf, protocol).dump(obj)
+TypeError: cannot pickle 'BufferedReader' instances
+2024-05-30 23:22:20,663 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:22:21,093 INFO Watching for file changes with StatReloader
+2024-05-30 23:22:23,440 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:22:23,888 INFO Watching for file changes with StatReloader
+2024-05-30 23:22:24,887 INFO [[1, 2], [3, 4]]
+2024-05-30 23:23:15,344 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:23:15,794 INFO Watching for file changes with StatReloader
+2024-05-30 23:23:16,910 INFO [[1, 2], [3, 4]]
+2024-05-30 23:23:32,583 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:23:32,968 INFO Watching for file changes with StatReloader
+2024-05-30 23:24:43,120 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:24:43,549 INFO Watching for file changes with StatReloader
+2024-05-30 23:24:44,549 ERROR Internal Server Error: /sumList/
+Traceback (most recent call last):
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\app\innerApp\views.py", line 24, in list
+    results = self.process_list(inputList)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\app\innerApp\views.py", line 19, in process_list
+    results = pool.map(lambda arr: print(arr), nested_list)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 774, in get
+    raise self._value
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 540, in _handle_tasks
+    put(task)
+  File "C:\Program Files\Python312\Lib\multiprocessing\connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\reduction.py", line 51, in dumps
+    cls(buf, protocol).dump(obj)
+AttributeError: Can't pickle local object 'ListManipulationViewSet.process_list.<locals>.<lambda>'
+2024-05-30 23:25:16,220 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:25:16,618 INFO Watching for file changes with StatReloader
+2024-05-30 23:25:19,936 ERROR Internal Server Error: /sumList/
+Traceback (most recent call last):
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\app\innerApp\views.py", line 24, in list
+    results = self.process_list(inputList)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\app\innerApp\views.py", line 19, in process_list
+    results = pool.map(lambda arr: sum(arr), nested_list)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 774, in get
+    raise self._value
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 540, in _handle_tasks
+    put(task)
+  File "C:\Program Files\Python312\Lib\multiprocessing\connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\reduction.py", line 51, in dumps
+    cls(buf, protocol).dump(obj)
+AttributeError: Can't pickle local object 'ListManipulationViewSet.process_list.<locals>.<lambda>'
+2024-05-30 23:25:54,659 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:25:55,041 INFO Watching for file changes with StatReloader
+2024-05-30 23:27:14,450 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:27:14,899 INFO Watching for file changes with StatReloader
+2024-05-30 23:27:49,476 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:27:49,942 INFO Watching for file changes with StatReloader
+2024-05-30 23:28:03,583 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:28:04,010 INFO Watching for file changes with StatReloader
+2024-05-30 23:28:07,824 INFO [3, 7]
+2024-05-30 23:28:50,247 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:28:50,627 INFO Watching for file changes with StatReloader
+2024-05-30 23:28:54,980 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:28:55,330 INFO Watching for file changes with StatReloader
+2024-05-30 23:28:58,651 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:28:59,027 INFO Watching for file changes with StatReloader
+2024-05-30 23:29:01,166 ERROR Error processing request: list indices must be integers or slices, not str
+2024-05-30 23:29:01,166 WARNING Bad Request: /sumList/
+2024-05-30 23:29:42,250 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:29:42,657 INFO Watching for file changes with StatReloader
+2024-05-30 23:29:44,594 INFO [3, 7]
+2024-05-30 23:31:02,423 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:31:02,852 INFO Watching for file changes with StatReloader
+2024-05-30 23:31:04,434 INFO [3, 7]
+2024-05-30 23:31:48,007 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:31:48,376 INFO Watching for file changes with StatReloader
+2024-05-30 23:32:32,537 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:32:32,974 INFO Watching for file changes with StatReloader
+2024-05-30 23:32:49,700 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:32:50,128 INFO Watching for file changes with StatReloader
+2024-05-30 23:34:13,624 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:34:13,992 INFO Watching for file changes with StatReloader
+2024-05-30 23:34:19,354 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:34:19,761 INFO Watching for file changes with StatReloader
+2024-05-30 23:34:21,180 INFO {'batchid': 'id0101', 'payload': [3, 7], 'started_at': datetime.datetime(2024, 5, 30, 23, 34, 20, 733515), 'end_at': datetime.datetime(2024, 5, 30, 23, 34, 21, 180034), 'status': 'Completed'}
+2024-05-30 23:35:38,356 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:35:38,762 INFO Watching for file changes with StatReloader
+2024-05-30 23:35:58,686 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:35:59,198 INFO Watching for file changes with StatReloader
+2024-05-30 23:36:16,102 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:36:16,495 INFO Watching for file changes with StatReloader
+2024-05-30 23:36:18,793 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-30 23:36:19,140 INFO Watching for file changes with StatReloader
+2024-05-30 23:36:50,035 INFO []
+2024-05-30 23:36:50,074 INFO {'batchid': 'id0101', 'payload': [], 'started_at': datetime.datetime(2024, 5, 30, 23, 36, 50, 35706), 'end_at': datetime.datetime(2024, 5, 30, 23, 36, 50, 74132), 'status': 'complete'}
+2024-05-30 23:37:59,544 INFO ['hg']
+2024-05-30 23:37:59,875 ERROR Error processing request: unsupported operand type(s) for +: 'int' and 'str'
+2024-05-30 23:37:59,875 WARNING Bad Request: /sumList/
+2024-05-30 23:41:23,385 INFO Watching for file changes with StatReloader
+2024-05-31 00:16:11,852 INFO Watching for file changes with StatReloader
+2024-05-31 00:16:14,126 INFO [[1, 2], [3, 4]]
+2024-05-31 00:16:14,585 INFO {'batchid': 'id0101', 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 16, 14, 139332), 'end_at': datetime.datetime(2024, 5, 31, 0, 16, 14, 585385), 'status': 'complete'}
+2024-05-31 00:21:47,066 INFO Watching for file changes with StatReloader
+2024-05-31 00:21:54,461 INFO Input processed: []
+2024-05-31 00:21:54,527 INFO Response processed: {'batchid': 'id0101', 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 21, 54, 478333), 'end_at': datetime.datetime(2024, 5, 31, 0, 21, 54, 527703), 'status': 'complete'}
+2024-05-31 00:22:01,570 INFO Input processed: ['nhkjn']
+2024-05-31 00:22:01,957 ERROR Error processing request: unsupported operand type(s) for +: 'int' and 'str'
+2024-05-31 00:22:02,004 ERROR Internal Server Error: /sumList/
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 48, in mapstar
+    return list(map(*args))
+           ^^^^^^^^^^^^^^^^
+  File "D:\testDjango\app\innerApp\views.py", line 16, in sum_inner
+    return sum(sublist)
+           ^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\testDjango\app\innerApp\views.py", line 33, in list
+    results = self.process_list(input_list)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\app\innerApp\views.py", line 20, in process_list
+    results = pool.map(self.sum_inner, nested_list)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 774, in get
+    raise self._value
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\app\innerApp\views.py", line 50, in list
+    response["end_at"] = end_at
+                         ^^^^^^
+UnboundLocalError: cannot access local variable 'end_at' where it is not associated with a value
+2024-05-31 00:22:12,827 INFO Input processed: ['yy']
+2024-05-31 00:22:13,148 ERROR Error processing request: unsupported operand type(s) for +: 'int' and 'str'
+2024-05-31 00:22:13,160 ERROR Internal Server Error: /sumList/
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 48, in mapstar
+    return list(map(*args))
+           ^^^^^^^^^^^^^^^^
+  File "D:\testDjango\app\innerApp\views.py", line 16, in sum_inner
+    return sum(sublist)
+           ^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\testDjango\app\innerApp\views.py", line 33, in list
+    results = self.process_list(input_list)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\app\innerApp\views.py", line 20, in process_list
+    results = pool.map(self.sum_inner, nested_list)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\multiprocessing\pool.py", line 774, in get
+    raise self._value
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\testDjango\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\env\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\testDjango\app\innerApp\views.py", line 50, in list
+    response["end_at"] = end_at
+                         ^^^^^^
+UnboundLocalError: cannot access local variable 'end_at' where it is not associated with a value
+2024-05-31 00:22:41,837 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-31 00:22:42,267 INFO Watching for file changes with StatReloader
+2024-05-31 00:22:44,665 INFO Input processed: ['yy']
+2024-05-31 00:22:45,036 ERROR Error processing request: unsupported operand type(s) for +: 'int' and 'str'
+2024-05-31 00:22:45,036 WARNING Bad Request: /sumList/
+2024-05-31 00:24:11,046 INFO Watching for file changes with StatReloader
+2024-05-31 00:24:14,323 INFO Input processed: []
+2024-05-31 00:24:14,358 INFO Response processed: {'batchid': 'id0101', 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 24, 14, 323742), 'end_at': datetime.datetime(2024, 5, 31, 0, 24, 14, 358360), 'status': 'complete'}
+2024-05-31 00:25:25,592 INFO D:\testDjango\app\innerApp\views.py changed, reloading.
+2024-05-31 00:25:25,992 INFO Watching for file changes with StatReloader
+2024-05-31 00:40:55,906 INFO Watching for file changes with StatReloader
+2024-05-31 00:41:03,343 ERROR Error processing request: 'Not a Valid Key'
+2024-05-31 00:41:03,353 WARNING Bad Request: /sumList/
+2024-05-31 00:41:14,848 INFO Input processed: ['yy']
+2024-05-31 00:41:15,221 ERROR Error processing request: unsupported operand type(s) for +: 'int' and 'str'
+2024-05-31 00:41:15,221 WARNING Bad Request: /sumList/
+2024-05-31 00:41:21,459 ERROR Error processing request: 'Not a Valid Key'
+2024-05-31 00:41:21,459 WARNING Bad Request: /sumList/
+2024-05-31 00:44:53,294 INFO Watching for file changes with StatReloader
+2024-05-31 00:45:07,132 ERROR Error processing request: 'Not a Valid Key'
+2024-05-31 00:45:07,132 WARNING Bad Request: /sumList/

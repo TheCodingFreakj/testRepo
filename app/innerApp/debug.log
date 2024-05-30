@@ -1,0 +1,276 @@
+2024-05-30 23:52:08,402 ERROR Error processing request: 'WSGIRequest' object has no attribute 'data'
+2024-05-30 23:52:08,464 ERROR Error processing request: 'WSGIRequest' object has no attribute 'data'
+2024-05-30 23:54:19,936 ERROR Error processing request: 'WSGIRequest' object has no attribute 'data'
+2024-05-30 23:54:20,009 ERROR Error processing request: 'WSGIRequest' object has no attribute 'data'
+2024-05-30 23:55:24,655 ERROR Error processing request: 'WSGIRequest' object has no attribute 'data'
+2024-05-30 23:55:24,655 ERROR Error processing request: 'WSGIRequest' object has no attribute 'data'
+2024-05-30 23:56:15,436 ERROR Error processing request: 'WSGIRequest' object has no attribute 'data'
+2024-05-30 23:56:15,436 ERROR Error processing request: 'WSGIRequest' object has no attribute 'data'
+2024-05-30 23:56:35,332 ERROR Error processing request: 'WSGIRequest' object has no attribute 'data'
+2024-05-30 23:56:35,411 ERROR Error processing request: 'WSGIRequest' object has no attribute 'data'
+2024-05-30 23:59:03,645 INFO [[1, 2], [3, 4]]
+2024-05-30 23:59:03,976 INFO {'batchid': None, 'payload': [3, 7], 'started_at': datetime.datetime(2024, 5, 30, 23, 59, 3, 645822), 'end_at': datetime.datetime(2024, 5, 30, 23, 59, 3, 976162), 'status': 'complete'}
+2024-05-30 23:59:04,058 ERROR Error processing request: 'WSGIRequest' object has no attribute 'data'
+2024-05-30 23:59:37,237 INFO [[1, 2], [3, 4]]
+2024-05-30 23:59:37,576 INFO {'batchid': None, 'payload': [3, 7], 'started_at': datetime.datetime(2024, 5, 30, 23, 59, 37, 237216), 'end_at': datetime.datetime(2024, 5, 30, 23, 59, 37, 576731), 'status': 'complete'}
+2024-05-30 23:59:37,584 ERROR Error processing request: 'WSGIRequest' object has no attribute 'data'
+2024-05-31 00:00:29,680 INFO [[1, 2], [3, 4]]
+2024-05-31 00:00:30,009 INFO {'batchid': None, 'payload': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 0, 29, 680631), 'end_at': datetime.datetime(2024, 5, 31, 0, 0, 30, 9498), 'status': 'complete'}
+2024-05-31 00:00:30,009 INFO invalid_payload
+2024-05-31 00:00:30,009 ERROR Error processing request: Payload must be a list
+2024-05-31 00:03:03,398 INFO [[1, 2], [3, 4]]
+2024-05-31 00:03:03,775 INFO {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 3, 3, 398577), 'end_at': datetime.datetime(2024, 5, 31, 0, 3, 3, 775941), 'status': 'complete'}
+2024-05-31 00:03:03,775 INFO invalid_payload
+2024-05-31 00:03:03,775 ERROR Error processing request: Payload must be a list
+2024-05-31 00:03:03,775 INFO []
+2024-05-31 00:03:03,864 INFO {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 3, 3, 775941), 'end_at': datetime.datetime(2024, 5, 31, 0, 3, 3, 864294), 'status': 'complete'}
+2024-05-31 00:04:42,014 INFO [[1, 2], [3, 4]]
+2024-05-31 00:04:42,346 INFO {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 4, 42, 14984), 'end_at': datetime.datetime(2024, 5, 31, 0, 4, 42, 346627), 'status': 'complete'}
+2024-05-31 00:04:42,346 INFO invalid_payload
+2024-05-31 00:04:42,346 ERROR Error processing request: Payload must be a list
+2024-05-31 00:04:42,346 INFO []
+2024-05-31 00:04:42,389 INFO {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 4, 42, 346627), 'end_at': datetime.datetime(2024, 5, 31, 0, 4, 42, 389604), 'status': 'complete'}
+2024-05-31 00:05:35,169 INFO [[1, 2], [3, 4]]
+2024-05-31 00:05:35,499 INFO {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 5, 35, 169246), 'end_at': datetime.datetime(2024, 5, 31, 0, 5, 35, 499422), 'status': 'complete'}
+2024-05-31 00:05:35,502 INFO invalid_payload
+2024-05-31 00:05:35,502 ERROR Error processing request: Payload must be a list
+2024-05-31 00:05:35,502 INFO []
+2024-05-31 00:05:35,591 INFO {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 5, 35, 507338), 'end_at': datetime.datetime(2024, 5, 31, 0, 5, 35, 591872), 'status': 'complete'}
+2024-05-31 00:05:54,318 INFO [[1, 2], [3, 4]]
+2024-05-31 00:05:54,662 INFO {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 5, 54, 318290), 'end_at': datetime.datetime(2024, 5, 31, 0, 5, 54, 662444), 'status': 'complete'}
+2024-05-31 00:05:54,662 INFO invalid_payload
+2024-05-31 00:05:54,662 ERROR Error processing request: Payload must be a list
+2024-05-31 00:05:54,662 INFO []
+2024-05-31 00:05:54,701 INFO {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 5, 54, 662444), 'end_at': datetime.datetime(2024, 5, 31, 0, 5, 54, 701511), 'status': 'complete'}
+2024-05-31 00:06:19,997 INFO [[1, 2], [3, 4]]
+2024-05-31 00:06:20,482 INFO {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 6, 19, 997280), 'end_at': datetime.datetime(2024, 5, 31, 0, 6, 20, 482695), 'status': 'complete'}
+2024-05-31 00:06:20,487 INFO invalid_payload
+2024-05-31 00:06:20,488 ERROR Error processing request: Payload must be a list
+2024-05-31 00:06:20,491 INFO []
+2024-05-31 00:06:20,621 INFO {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 6, 20, 491312), 'end_at': datetime.datetime(2024, 5, 31, 0, 6, 20, 621304), 'status': 'complete'}
+2024-05-31 00:06:36,850 INFO [[1, 2], [3, 4]]
+2024-05-31 00:06:37,164 INFO {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 6, 36, 850048), 'end_at': datetime.datetime(2024, 5, 31, 0, 6, 37, 164751), 'status': 'complete'}
+2024-05-31 00:06:37,180 INFO invalid_payload
+2024-05-31 00:06:37,180 ERROR Error processing request: Payload must be a list
+2024-05-31 00:06:37,180 INFO []
+2024-05-31 00:06:37,263 INFO {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 6, 37, 180387), 'end_at': datetime.datetime(2024, 5, 31, 0, 6, 37, 263084), 'status': 'complete'}
+2024-05-31 00:09:14,784 INFO [[1, 2], [3, 4]]
+2024-05-31 00:09:15,114 INFO {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 9, 14, 784579), 'end_at': datetime.datetime(2024, 5, 31, 0, 9, 15, 114702), 'status': 'complete'}
+2024-05-31 00:09:15,114 INFO invalid_payload
+2024-05-31 00:09:15,114 ERROR Error processing request: Payload must be a list
+2024-05-31 00:09:15,114 INFO []
+2024-05-31 00:09:15,145 INFO {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 9, 15, 114702), 'end_at': datetime.datetime(2024, 5, 31, 0, 9, 15, 145646), 'status': 'complete'}
+2024-05-31 00:10:27,573 INFO [[1, 2], [3, 4]]
+2024-05-31 00:10:27,901 INFO {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 10, 27, 573356), 'end_at': datetime.datetime(2024, 5, 31, 0, 10, 27, 901542), 'status': 'complete'}
+2024-05-31 00:10:27,901 INFO invalid_payload
+2024-05-31 00:10:27,901 ERROR Error processing request: Payload must be a list
+2024-05-31 00:10:27,917 INFO []
+2024-05-31 00:10:27,962 INFO {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 10, 27, 917799), 'end_at': datetime.datetime(2024, 5, 31, 0, 10, 27, 962059), 'status': 'complete'}
+2024-05-31 00:12:08,105 INFO [[1, 2], [3, 4]]
+2024-05-31 00:12:08,434 INFO {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 12, 8, 105740), 'end_at': datetime.datetime(2024, 5, 31, 0, 12, 8, 434813), 'status': 'complete'}
+2024-05-31 00:12:08,450 INFO invalid_payload
+2024-05-31 00:12:08,450 ERROR Error processing request: Payload must be a list
+2024-05-31 00:12:08,450 INFO []
+2024-05-31 00:12:08,516 INFO {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 12, 8, 450448), 'end_at': datetime.datetime(2024, 5, 31, 0, 12, 8, 516420), 'status': 'complete'}
+2024-05-31 00:12:37,643 INFO [[1, 2], [3, 4]]
+2024-05-31 00:12:37,959 INFO {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 12, 37, 643821), 'end_at': datetime.datetime(2024, 5, 31, 0, 12, 37, 959483), 'status': 'complete'}
+2024-05-31 00:12:37,975 INFO invalid_payload
+2024-05-31 00:12:37,975 ERROR Error processing request: Payload must be a list
+2024-05-31 00:12:37,975 INFO []
+2024-05-31 00:12:38,030 INFO {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 12, 37, 975118), 'end_at': datetime.datetime(2024, 5, 31, 0, 12, 38, 30198), 'status': 'complete'}
+2024-05-31 00:13:13,449 INFO [[1, 2], [3, 4]]
+2024-05-31 00:13:13,793 INFO {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 13, 13, 449418), 'end_at': datetime.datetime(2024, 5, 31, 0, 13, 13, 793963), 'status': 'complete'}
+2024-05-31 00:13:13,793 INFO invalid_payload
+2024-05-31 00:13:13,793 ERROR Error processing request: Payload must be a list
+2024-05-31 00:13:13,810 INFO []
+2024-05-31 00:13:13,860 INFO {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 13, 13, 810086), 'end_at': datetime.datetime(2024, 5, 31, 0, 13, 13, 859420), 'status': 'complete'}
+2024-05-31 00:14:48,781 INFO [[1, 2], [3, 4]]
+2024-05-31 00:14:49,145 INFO {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 14, 48, 781688), 'end_at': datetime.datetime(2024, 5, 31, 0, 14, 49, 145422), 'status': 'complete'}
+2024-05-31 00:14:49,149 INFO invalid_payload
+2024-05-31 00:14:49,149 ERROR Error processing request: Payload must be a list
+2024-05-31 00:14:49,149 INFO []
+2024-05-31 00:14:49,239 INFO {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 14, 49, 149135), 'end_at': datetime.datetime(2024, 5, 31, 0, 14, 49, 239606), 'status': 'complete'}
+2024-05-31 00:15:09,801 INFO [[1, 2], [3, 4]]
+2024-05-31 00:15:10,167 INFO {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 15, 9, 801003), 'end_at': datetime.datetime(2024, 5, 31, 0, 15, 10, 167956), 'status': 'complete'}
+2024-05-31 00:15:10,167 INFO invalid_payload
+2024-05-31 00:15:10,167 ERROR Error processing request: Payload must be a list
+2024-05-31 00:15:10,167 INFO []
+2024-05-31 00:15:10,199 INFO {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 15, 10, 167956), 'end_at': datetime.datetime(2024, 5, 31, 0, 15, 10, 199691), 'status': 'complete'}
+2024-05-31 00:16:39,907 INFO [[1, 2], [3, 4]]
+2024-05-31 00:16:40,253 INFO {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 16, 39, 907171), 'end_at': datetime.datetime(2024, 5, 31, 0, 16, 40, 253447), 'status': 'complete'}
+2024-05-31 00:16:40,253 INFO invalid_payload
+2024-05-31 00:16:40,253 ERROR Error processing request: Payload must be a list
+2024-05-31 00:16:40,268 INFO []
+2024-05-31 00:16:40,360 INFO {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 16, 40, 268606), 'end_at': datetime.datetime(2024, 5, 31, 0, 16, 40, 360841), 'status': 'complete'}
+2024-05-31 00:17:29,109 INFO [[1, 2], [3, 4]]
+2024-05-31 00:17:29,424 INFO {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 17, 29, 109459), 'end_at': datetime.datetime(2024, 5, 31, 0, 17, 29, 424724), 'status': 'complete'}
+2024-05-31 00:17:29,424 INFO invalid_payload
+2024-05-31 00:17:29,424 ERROR Error processing request: Payload must be a list
+2024-05-31 00:17:29,424 INFO []
+2024-05-31 00:17:29,474 INFO {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 17, 29, 424724), 'end_at': datetime.datetime(2024, 5, 31, 0, 17, 29, 474446), 'status': 'complete'}
+2024-05-31 00:18:21,020 INFO [[1, 2], [3, 4]]
+2024-05-31 00:18:21,382 INFO {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 18, 21, 20765), 'end_at': datetime.datetime(2024, 5, 31, 0, 18, 21, 382973), 'status': 'complete'}
+2024-05-31 00:18:21,382 INFO invalid_payload
+2024-05-31 00:18:21,382 ERROR Error processing request: Payload must be a list
+2024-05-31 00:18:21,382 INFO []
+2024-05-31 00:18:21,465 INFO {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 18, 21, 382973), 'end_at': datetime.datetime(2024, 5, 31, 0, 18, 21, 465163), 'status': 'complete'}
+2024-05-31 00:18:21,465 INFO []
+2024-05-31 00:18:21,541 INFO {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 18, 21, 465163), 'end_at': datetime.datetime(2024, 5, 31, 0, 18, 21, 541212), 'status': 'complete'}
+2024-05-31 00:21:14,945 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:21:15,283 INFO Response processed: {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 21, 14, 945096), 'end_at': datetime.datetime(2024, 5, 31, 0, 21, 15, 283543), 'status': 'complete'}
+2024-05-31 00:21:15,283 INFO Input processed: invalid_payload
+2024-05-31 00:21:15,283 ERROR Error processing request: Payload must be a list
+2024-05-31 00:21:15,370 INFO Input processed: []
+2024-05-31 00:21:15,421 INFO Response processed: {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 21, 15, 370540), 'end_at': datetime.datetime(2024, 5, 31, 0, 21, 15, 421378), 'status': 'complete'}
+2024-05-31 00:21:15,421 INFO Input processed: []
+2024-05-31 00:21:15,489 INFO Response processed: {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 21, 15, 421378), 'end_at': datetime.datetime(2024, 5, 31, 0, 21, 15, 489278), 'status': 'complete'}
+2024-05-31 00:23:15,335 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:23:15,686 INFO Response processed: {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 23, 15, 335753), 'end_at': datetime.datetime(2024, 5, 31, 0, 23, 15, 686405), 'status': 'complete'}
+2024-05-31 00:23:15,686 INFO Input processed: invalid_payload
+2024-05-31 00:23:15,686 ERROR Error processing request: Payload must be a list
+2024-05-31 00:23:15,686 INFO Input processed: []
+2024-05-31 00:23:15,752 INFO Response processed: {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 23, 15, 686405), 'end_at': datetime.datetime(2024, 5, 31, 0, 23, 15, 752961), 'status': 'complete'}
+2024-05-31 00:23:15,752 INFO Input processed: []
+2024-05-31 00:23:15,784 INFO Response processed: {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 23, 15, 752961), 'end_at': datetime.datetime(2024, 5, 31, 0, 23, 15, 784461), 'status': 'complete'}
+2024-05-31 00:26:52,872 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:26:53,287 INFO Response processed: {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 26, 52, 872481), 'end_at': datetime.datetime(2024, 5, 31, 0, 26, 53, 287780), 'status': 'complete'}
+2024-05-31 00:26:53,287 INFO Input processed: invalid_payload
+2024-05-31 00:26:53,287 ERROR Error processing request: Payload must be a list
+2024-05-31 00:26:53,287 INFO Input processed: []
+2024-05-31 00:26:53,349 INFO Response processed: {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 26, 53, 287780), 'end_at': datetime.datetime(2024, 5, 31, 0, 26, 53, 349042), 'status': 'complete'}
+2024-05-31 00:27:06,441 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:27:06,813 INFO Response processed: {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 27, 6, 441460), 'end_at': datetime.datetime(2024, 5, 31, 0, 27, 6, 813935), 'status': 'complete'}
+2024-05-31 00:27:06,819 INFO Input processed: invalid_payload
+2024-05-31 00:27:06,819 ERROR Error processing request: Payload must be a list
+2024-05-31 00:27:06,819 INFO Input processed: []
+2024-05-31 00:27:06,881 INFO Response processed: {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 27, 6, 819442), 'end_at': datetime.datetime(2024, 5, 31, 0, 27, 6, 881590), 'status': 'complete'}
+2024-05-31 00:27:32,843 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:27:33,176 INFO Response processed: {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 27, 32, 843855), 'end_at': datetime.datetime(2024, 5, 31, 0, 27, 33, 176123), 'status': 'complete'}
+2024-05-31 00:27:33,176 INFO Input processed: invalid_payload
+2024-05-31 00:27:33,176 ERROR Error processing request: Payload must be a list
+2024-05-31 00:27:33,182 INFO Input processed: []
+2024-05-31 00:27:33,257 INFO Response processed: {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 27, 33, 182062), 'end_at': datetime.datetime(2024, 5, 31, 0, 27, 33, 257548), 'status': 'complete'}
+2024-05-31 00:27:33,257 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:27:33,257 ERROR Error processing request: Mocked exception
+2024-05-31 00:27:56,399 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:27:56,749 INFO Response processed: {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 27, 56, 399980), 'end_at': datetime.datetime(2024, 5, 31, 0, 27, 56, 749192), 'status': 'complete'}
+2024-05-31 00:27:56,749 INFO Input processed: invalid_payload
+2024-05-31 00:27:56,749 ERROR Error processing request: Payload must be a list
+2024-05-31 00:27:56,761 INFO Input processed: []
+2024-05-31 00:27:56,844 INFO Response processed: {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 27, 56, 761499), 'end_at': datetime.datetime(2024, 5, 31, 0, 27, 56, 844987), 'status': 'complete'}
+2024-05-31 00:27:56,844 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:27:56,844 ERROR Error processing request: Mocked exception
+2024-05-31 00:29:08,241 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:29:08,575 INFO Response processed: {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 29, 8, 241178), 'end_at': datetime.datetime(2024, 5, 31, 0, 29, 8, 575830), 'status': 'complete'}
+2024-05-31 00:29:08,575 INFO Input processed: invalid_payload
+2024-05-31 00:29:08,575 ERROR Error processing request: Payload must be a list
+2024-05-31 00:29:08,575 INFO Input processed: []
+2024-05-31 00:29:08,680 INFO Response processed: {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 29, 8, 575830), 'end_at': datetime.datetime(2024, 5, 31, 0, 29, 8, 680600), 'status': 'complete'}
+2024-05-31 00:29:08,683 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:29:08,683 ERROR Error processing request: Mocked exception
+2024-05-31 00:29:34,201 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:29:34,547 INFO Response processed: {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 29, 34, 201306), 'end_at': datetime.datetime(2024, 5, 31, 0, 29, 34, 547942), 'status': 'complete'}
+2024-05-31 00:29:34,547 INFO Input processed: invalid_payload
+2024-05-31 00:29:34,547 ERROR Error processing request: Payload must be a list
+2024-05-31 00:29:34,547 INFO Input processed: []
+2024-05-31 00:29:34,627 INFO Response processed: {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 29, 34, 547942), 'end_at': datetime.datetime(2024, 5, 31, 0, 29, 34, 627879), 'status': 'complete'}
+2024-05-31 00:29:34,627 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:29:34,627 ERROR Error processing request: Mocked exception
+2024-05-31 00:31:12,326 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:31:12,641 INFO Response processed: {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 31, 12, 326254), 'end_at': datetime.datetime(2024, 5, 31, 0, 31, 12, 641295), 'status': 'complete'}
+2024-05-31 00:31:12,641 INFO Input processed: invalid_payload
+2024-05-31 00:31:12,641 ERROR Error processing request: Payload must be a list
+2024-05-31 00:31:12,657 INFO Input processed: []
+2024-05-31 00:31:12,683 INFO Response processed: {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 31, 12, 657518), 'end_at': datetime.datetime(2024, 5, 31, 0, 31, 12, 682265), 'status': 'complete'}
+2024-05-31 00:31:12,683 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:31:12,683 ERROR Error processing request: Mocked exception
+2024-05-31 00:32:09,641 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:32:09,966 INFO Response processed: {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 32, 9, 641601), 'end_at': datetime.datetime(2024, 5, 31, 0, 32, 9, 966728), 'status': 'complete'}
+2024-05-31 00:32:09,966 INFO Input processed: invalid_payload
+2024-05-31 00:32:09,966 ERROR Error processing request: Payload must be a list
+2024-05-31 00:32:09,966 INFO Input processed: []
+2024-05-31 00:32:09,996 INFO Response processed: {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 32, 9, 966728), 'end_at': datetime.datetime(2024, 5, 31, 0, 32, 9, 996914), 'status': 'complete'}
+2024-05-31 00:32:09,999 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:32:09,999 ERROR Error processing request: Mocked exception
+2024-05-31 00:32:55,775 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:32:56,115 INFO Response processed: {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 32, 55, 775468), 'end_at': datetime.datetime(2024, 5, 31, 0, 32, 56, 115465), 'status': 'complete'}
+2024-05-31 00:32:56,120 INFO Input processed: invalid_payload
+2024-05-31 00:32:56,120 ERROR Error processing request: Payload must be a list
+2024-05-31 00:32:56,120 INFO Input processed: []
+2024-05-31 00:32:56,202 INFO Response processed: {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 32, 56, 120973), 'end_at': datetime.datetime(2024, 5, 31, 0, 32, 56, 202828), 'status': 'complete'}
+2024-05-31 00:32:56,202 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:32:56,202 ERROR Error processing request: Mocked exception
+2024-05-31 00:33:15,191 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:33:15,521 INFO Response processed: {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 33, 15, 191500), 'end_at': datetime.datetime(2024, 5, 31, 0, 33, 15, 521076), 'status': 'complete'}
+2024-05-31 00:33:15,521 INFO Input processed: invalid_payload
+2024-05-31 00:33:15,521 ERROR Error processing request: Payload must be a list
+2024-05-31 00:33:15,521 INFO Input processed: []
+2024-05-31 00:33:15,614 INFO Response processed: {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 33, 15, 521076), 'end_at': datetime.datetime(2024, 5, 31, 0, 33, 15, 614830), 'status': 'complete'}
+2024-05-31 00:33:15,614 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:33:15,614 ERROR Error processing request: Mocked exception
+2024-05-31 00:33:49,598 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:33:49,945 INFO Response processed: {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 33, 49, 598763), 'end_at': datetime.datetime(2024, 5, 31, 0, 33, 49, 945869), 'status': 'complete'}
+2024-05-31 00:33:49,945 INFO Input processed: invalid_payload
+2024-05-31 00:33:49,945 ERROR Error processing request: Payload must be a list
+2024-05-31 00:33:49,945 INFO Input processed: []
+2024-05-31 00:33:50,044 INFO Response processed: {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 33, 49, 945869), 'end_at': datetime.datetime(2024, 5, 31, 0, 33, 50, 44422), 'status': 'complete'}
+2024-05-31 00:33:50,044 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:33:50,044 ERROR Error processing request: Mocked exception
+2024-05-31 00:33:50,051 INFO Input processed: []
+2024-05-31 00:33:50,152 INFO Response processed: {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 33, 50, 51821), 'end_at': datetime.datetime(2024, 5, 31, 0, 33, 50, 152908), 'status': 'complete'}
+2024-05-31 00:35:01,724 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:35:02,053 INFO Response processed: {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 35, 1, 724785), 'end_at': datetime.datetime(2024, 5, 31, 0, 35, 2, 53657), 'status': 'complete'}
+2024-05-31 00:35:02,053 INFO Input processed: invalid_payload
+2024-05-31 00:35:02,053 ERROR Error processing request: Payload must be a list
+2024-05-31 00:35:02,053 INFO Input processed: []
+2024-05-31 00:35:02,136 INFO Response processed: {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 35, 2, 53657), 'end_at': datetime.datetime(2024, 5, 31, 0, 35, 2, 136595), 'status': 'complete'}
+2024-05-31 00:35:02,136 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:35:02,136 ERROR Error processing request: Mocked exception
+2024-05-31 00:35:02,136 INFO Input processed: []
+2024-05-31 00:35:02,211 INFO Response processed: {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 35, 2, 136595), 'end_at': datetime.datetime(2024, 5, 31, 0, 35, 2, 211856), 'status': 'complete'}
+2024-05-31 00:36:54,554 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:36:54,904 INFO Response processed: {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 36, 54, 554810), 'end_at': datetime.datetime(2024, 5, 31, 0, 36, 54, 904670), 'status': 'complete'}
+2024-05-31 00:36:54,904 INFO Input processed: invalid_payload
+2024-05-31 00:36:54,904 ERROR Error processing request: Payload must be a list
+2024-05-31 00:36:54,904 INFO Input processed: []
+2024-05-31 00:36:54,975 INFO Response processed: {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 36, 54, 914804), 'end_at': datetime.datetime(2024, 5, 31, 0, 36, 54, 975526), 'status': 'complete'}
+2024-05-31 00:36:54,976 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:36:54,976 ERROR Error processing request: Mocked exception
+2024-05-31 00:36:54,979 INFO Input processed: []
+2024-05-31 00:36:55,042 INFO Response processed: {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 36, 54, 979630), 'end_at': datetime.datetime(2024, 5, 31, 0, 36, 55, 42486), 'status': 'complete'}
+2024-05-31 00:42:36,279 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:42:36,742 INFO Response processed: {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 42, 36, 279728), 'end_at': datetime.datetime(2024, 5, 31, 0, 42, 36, 742168), 'status': 'complete'}
+2024-05-31 00:42:36,759 INFO Input processed: invalid_payload
+2024-05-31 00:42:36,759 ERROR Error processing request: Payload must be a list
+2024-05-31 00:42:36,759 INFO Input processed: []
+2024-05-31 00:42:36,778 INFO Response processed: {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 42, 36, 759877), 'end_at': datetime.datetime(2024, 5, 31, 0, 42, 36, 776241), 'status': 'complete'}
+2024-05-31 00:42:36,778 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:42:36,778 ERROR Error processing request: Mocked exception
+2024-05-31 00:42:36,778 ERROR Error processing request: 'Not a Valid Key'
+2024-05-31 00:43:14,615 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:43:14,944 INFO Response processed: {'batchid': None, 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 43, 14, 615033), 'end_at': datetime.datetime(2024, 5, 31, 0, 43, 14, 944483), 'status': 'complete'}
+2024-05-31 00:43:14,956 INFO Input processed: invalid_payload
+2024-05-31 00:43:14,956 ERROR Error processing request: Payload must be a list
+2024-05-31 00:43:14,960 INFO Input processed: []
+2024-05-31 00:43:14,975 INFO Response processed: {'batchid': None, 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 43, 14, 960142), 'end_at': datetime.datetime(2024, 5, 31, 0, 43, 14, 975786), 'status': 'complete'}
+2024-05-31 00:43:14,975 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:43:14,975 ERROR Error processing request: Mocked exception
+2024-05-31 00:43:14,991 ERROR Error processing request: 'Not a Valid Key'
+2024-05-31 00:45:53,322 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:45:53,652 INFO Response processed: {'batchid': 'id0101', 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 45, 53, 322607), 'end_at': datetime.datetime(2024, 5, 31, 0, 45, 53, 652663), 'status': 'complete'}
+2024-05-31 00:45:53,652 INFO Input processed: invalid_payload
+2024-05-31 00:45:53,652 ERROR Error processing request: Payload must be a list
+2024-05-31 00:45:53,652 INFO Input processed: []
+2024-05-31 00:45:53,747 INFO Response processed: {'batchid': 'id0101', 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 45, 53, 652663), 'end_at': datetime.datetime(2024, 5, 31, 0, 45, 53, 747139), 'status': 'complete'}
+2024-05-31 00:45:53,814 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:45:53,814 ERROR Error processing request: Mocked exception
+2024-05-31 00:45:53,814 ERROR Error processing request: 'Not a Valid Key'
+2024-05-31 00:46:20,948 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:46:21,279 INFO Response processed: {'batchid': 'id0101', 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 0, 46, 20, 948741), 'end_at': datetime.datetime(2024, 5, 31, 0, 46, 21, 279346), 'status': 'complete'}
+2024-05-31 00:46:21,279 INFO Input processed: invalid_payload
+2024-05-31 00:46:21,279 ERROR Error processing request: Payload must be a list
+2024-05-31 00:46:21,279 INFO Input processed: []
+2024-05-31 00:46:21,334 INFO Response processed: {'batchid': 'id0101', 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 0, 46, 21, 279346), 'end_at': datetime.datetime(2024, 5, 31, 0, 46, 21, 334601), 'status': 'complete'}
+2024-05-31 00:46:21,334 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 00:46:21,334 ERROR Error processing request: Mocked exception
+2024-05-31 00:46:21,334 ERROR Error processing request: 'Not a Valid Key'
