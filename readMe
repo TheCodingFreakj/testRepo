@@ -1,0 +1,15 @@
+In root folder
+python -m venv env #create the env folder
+./env/Scripts/activate #activate the env folder
+cd app
+pip install -r requirements.txt # install the dependencies
+python manage.py runserver
+http://127.0.0.1:8000/sumList/
+provide the payload
+{
+    "batchid":"010101",
+    "payload":[[1,2],[4,3]]
+}
+For running tests:
+cd innerApp
+pytest

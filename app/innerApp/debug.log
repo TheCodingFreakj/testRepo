@@ -274,3 +274,12 @@
 2024-05-31 00:46:21,334 INFO Input processed: [[1, 2], [3, 4]]
 2024-05-31 00:46:21,334 ERROR Error processing request: Mocked exception
 2024-05-31 00:46:21,334 ERROR Error processing request: 'Not a Valid Key'
+2024-05-31 10:57:10,280 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 10:57:10,638 INFO Response processed: {'batchid': 'id0101', 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 10, 57, 10, 280107), 'end_at': datetime.datetime(2024, 5, 31, 10, 57, 10, 638718), 'status': 'complete'}
+2024-05-31 10:57:10,638 INFO Input processed: invalid_payload
+2024-05-31 10:57:10,638 ERROR Error processing request: Payload must be a list
+2024-05-31 10:57:10,638 INFO Input processed: []
+2024-05-31 10:57:10,712 INFO Response processed: {'batchid': 'id0101', 'response': [], 'started_at': datetime.datetime(2024, 5, 31, 10, 57, 10, 638718), 'end_at': datetime.datetime(2024, 5, 31, 10, 57, 10, 712249), 'status': 'complete'}
+2024-05-31 10:57:10,712 INFO Input processed: [[1, 2], [3, 4]]
+2024-05-31 10:57:10,712 ERROR Error processing request: Mocked exception
+2024-05-31 10:57:10,717 ERROR Error processing request: 'Not a Valid Key'
